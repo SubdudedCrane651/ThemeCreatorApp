@@ -1,0 +1,26 @@
+﻿<Window x:Class="ThemeCreatorApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Theme Creator" Height="500" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label Content="Select Background Images:" />
+            <Button Name="SelectBackgroundsButton" Content="Browse..." Click="SelectBackgroundsButton_Click" />
+            <ListBox Name="BackgroundImagesListBox" Height="100" />
+
+            <Label Content="Select Desktop Icons:" />
+            <Button Name="SelectIconsButton" Content="Browse..." Click="SelectIconsButton_Click" />
+            <ListBox Name="IconsListBox" Height="100" />
+
+            <Label Content="Select System Icons:" />
+            <Button Name="SelectComputerIconButton" Content="Select 'This PC' Icon" Click="SelectComputerIconButton_Click" />
+            <Button Name="SelectNetworkIconButton" Content="Select 'Network' Icon" Click="SelectNetworkIconButton_Click" />
+            <Button Name="SelectRecycleBinFullIconButton" Content="Select 'Recycle Bin Full' Icon" Click="SelectRecycleBinFullIconButton_Click" />
+            <Button Name="SelectRecycleBinEmptyIconButton" Content="Select 'Recycle Bin Empty' Icon" Click="SelectRecycleBinEmptyIconButton_Click" />
+            <Image Name="SystemIconPreview" Height="100" Width="100" />
+
+            <Button Content="Start Slideshow" Click="StartSlideshowButton_Click" />
+            <Button Content="Apply Theme" Click="ApplyThemeButton_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
